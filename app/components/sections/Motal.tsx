@@ -36,18 +36,18 @@ export default function ExperienceModal({
   
   const experience = getProjectById(experienceId) || Object.values(PROJECT_DATA)[0];
 
-  useEffect(() => {
-    if (open) {
-      document.body.style.overflow = 'hidden';
-      preloadImages(experience.features);
-    } else {
-      document.body.style.overflow = 'unset';
-    }
+  // useEffect(() => {
+  //   if (open) {
+  //     document.body.style.overflow = 'hidden';
+  //     preloadImages(experience.features);
+  //   } else {
+  //     document.body.style.overflow = 'unset';
+  //   }
 
-    return () => {
-      document.body.style.overflow = 'unset';
-    }
-  }, [open, experience.features]);
+  //   return () => {
+  //     document.body.style.overflow = 'unset';
+  //   }
+  // }, [open, experience.features]);
 
   useEffect(() => {
     if (!open) {
@@ -231,7 +231,7 @@ export default function ExperienceModal({
             />
           </a>
 
-          <div className="space-y-8">
+          {/* <div className="space-y-8">
             <h2 className="
               text-xl sm:text-2xl 
               font-bold 
@@ -323,7 +323,7 @@ export default function ExperienceModal({
                 </div>
               ))}
             </div>
-          </div>
+          </div> */}
 
           <div className="space-y-8 mb-12">
             <h2 className="

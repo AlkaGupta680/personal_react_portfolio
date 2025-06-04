@@ -7,11 +7,7 @@ export type ProjectDetail = {
   mainImage: string        // Main project image path
   link: string            // Live project URL
   github?: string         // Optional GitHub repository URL
-  features: {             // List of project features
-    title: string         // Feature title
-    description: string   // Feature description  
-    image: string | string[] // Feature image(s) path
-  }[]
+  
   techStack: {            // Technical stack groupings
     category: string      // Tech category name
     items: string[]       // List of technologies
@@ -25,22 +21,22 @@ export const PROJECT_DATA: Record<number, ProjectDetail> = {
     id: 1,
     title: "PG life",
     company: "internshala", 
-    overview: "it has only frontend",
+    overview: "PG Life is a modern web application designed to help users easily find and explore accommodation options such as hostels and PGs (paying guest facilities) in various cities. The platform features an intuitive, user-friendly interface where users can browse listings, view detailed information about each property, and filter results based on their preferences such as location, price, and amenities.    Note:Currently, PG Life is a frontend-only project. All data is static or mocked, and backend integration ,is planned for future updates.",
     mainImage: "/gallery/main.png",
     link: "https://github.com/AlkaGupta680/PGLife",
-    features: [
-      {
-        title: "login/signup",
-        description: "user can create its account or if already exit then user can login",
-        image: "/gallery/feature1.png"
-      },
-      {
-        title: "Filter option",
-        description: "filter option helps user to get mostly relevant result",
-        image: "/gallery/feature2.png"
-      }
+    // features: [
+    //   {
+    //     title: "login/signup",
+    //     description: "user can create its account or if already exit then user can login",
+    //     image: "/gallery/feature1.png"
+    //   },
+    //   {
+    //     title: "Filter option",
+    //     description: "filter option helps user to get mostly relevant result",
+    //     image: "/gallery/feature2.png"
+    //   }
 
-    ],
+    // ],
     techStack: [
       {
         category: "Frontend",
@@ -57,24 +53,24 @@ export const PROJECT_DATA: Record<number, ProjectDetail> = {
     mainImage: "/gallery/voting.png",
     link: "https://github.com/AlkaGupta680/voting_app",
     
-    features: [
-      {
-        title: "User sign up and login with Aadhar Card Number and password",
-        description: "",
-        image: "/gallery/feature.png"
-      },
-      {
-        title: "User can view the list of candidates",
-        description: "",
-        image: "/gallery/feature.png"
-      },
-      {
-        title: "Admin can manage candidates (add, update, delete)",
-        description: "soon...",
-        image: "/gallery/feature.png"
-      }
+    // features: [
+    //   {
+    //     title: "User sign up and login with Aadhar Card Number and password",
+    //     description: "",
+    //     image: "/gallery/feature.png"
+    //   },
+    //   {
+    //     title: "User can view the list of candidates",
+    //     description: "",
+    //     image: "/gallery/feature.png"
+    //   },
+    //   {
+    //     title: "Admin can manage candidates (add, update, delete)",
+    //     description: "soon...",
+    //     image: "/gallery/feature.png"
+    //   }
 
-    ],
+    // ],
     techStack: [
       {
         category: "Full stack",
@@ -90,13 +86,13 @@ export const PROJECT_DATA: Record<number, ProjectDetail> = {
     overview: "This is a full-stack restaurant web application that allows users to explore the menu, place orders, and reserve tables online. It features user authentication, dynamic order management, and an admin dashboard for handling menu items and customer requests. The backend manages data flow, order tracking, and user sessions, while the frontend offers a visually engaging and user-friendly interface for a smooth dining experience online.", 
     mainImage: "/gallery/hotel_logo.png",
     link: "https://github.com/AlkaGupta680/node_hotels",
-    features: [
-      {
-        title: "Make reservation",
-        description: "user can make reservation",
-        image: "/example2/feature.png"
-      }
-    ],
+    // features: [
+    //   {
+    //     title: "Make reservation",
+    //     description: "user can make reservation",
+    //     image: ""
+    //   }
+    // ],
     techStack: [
       {
         category: "Full Stack",
@@ -112,13 +108,13 @@ export const PROJECT_DATA: Record<number, ProjectDetail> = {
     overview: "Drama Blossom is a full-stack MERN web application for K-drama and K-movie enthusiasts. Users can create personal accounts to explore a curated library of Korean dramas and movies, bookmark favorites, and engage in community discussions through comments and reviews. The platform features secure user authentication, personalized watchlists, and an admin dashboard for managing content and user activity. The backend efficiently handles data management, authentication, and user sessions, while the frontend offers a modern, responsive, and user-friendly interface for a seamless entertainment experience.", 
     mainImage: "/gallery/dramaBlossom.png",
     link: "https://github.com/AlkaGupta680/MERN-Drama-Blossom",
-    features: [
-      {
-        title: "Make reservation",
-        description: "user can make reservation",
-        image: "/example2/feature.png"
-      }
-    ],
+    // features: [
+    //   {
+    //     title: "user authentication",
+    //     description: "user can make reservation",
+    //     image: ""
+    //   }
+    // ],
     techStack: [
       {
         category: "Full Stack",
