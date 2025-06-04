@@ -15,7 +15,7 @@ const courses: CourseItem[] = [
   {
     date: "2022 - 2026",
     title: "IGDTUW",
-    description: "Electronics and communication engineering | GPA: 7.47"
+    description: "Electronics and communication engineering | GPA: 7.5"
   },
   {
     date: "2020-2021",

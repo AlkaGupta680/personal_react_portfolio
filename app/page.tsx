@@ -10,7 +10,7 @@ import MySkills from './components/sections/MySkills'
 import Experience from './components/sections/Experience'
 import { Box } from '@mui/material'
 import Projects from './components/sections/Projects'
-import Gallery from './components/sections/Gallery'
+
 
 // Step 2: Choose your template version
 // For Researcher Template: uncomment these imports
@@ -55,7 +55,7 @@ export default function Home() {
         <Projects />
         
         {/* Gallery section - Add your photos in /components/sections/Gallery */}
-        <Gallery />
+        {/* <Gallery /> */}
       </main>
     </>
   )

@@ -23,7 +23,7 @@ const navItems = [
   { name: "Education", href: "#education" },
   { name: "Experience", href: "#experience"},
   { name: "Projects", href: "#projects"},
-  { name: "Blog", href: "#gallery"},
+
 ]
 
 export default function Navbar() {

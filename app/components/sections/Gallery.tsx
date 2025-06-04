@@ -39,7 +39,7 @@ const photos: Photo[] = [
 export default function Gallery() {
   return (
     <Container id="gallery" maxWidth="xl" component="section">
-      <Box sx={{ 
+     <Box sx={{ 
         minHeight: '100vh',
         display: 'flex', 
         flexDirection: 'column', 
@@ -56,7 +56,7 @@ export default function Gallery() {
             start: '#60A5FA',  // Light blue
             end: '#3B82F6'     // Deep blue
           }}
-        />
+        /> 
 
         <AnimatedText>
           <h1 className="text-3xl sm:text-4xl font-bold mb-4 text-center relative z-10">Blog</h1>

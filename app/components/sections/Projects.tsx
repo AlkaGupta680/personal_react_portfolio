@@ -19,7 +19,6 @@ type Project = {
   id: number
   title: string
   description: string
-  period: string
   image: string
   skills: string[]
   link: string
@@ -36,20 +35,27 @@ const projects: Project[] = [
     id: 2,
     title: "Voting App",
     description: "This is a full-stack web application that allows users to participate in real-time voting. It features secure authentication, dynamic vote updates, and an intuitive user interface. The backend handles vote storage, user sessions, and live data synchronization, while the frontend provides a smooth, interactive experience. Built using modern technologies to showcase backend logic, API handling, and frontend integration.",
-    period: "2024.01 - 2024.03",
     image: "/gallery/voting.png", // Screenshot path
-    skills: ["React", "JavaScript", "Node.js", "MongoDB"], // Tech stack
+    skills: ["React", "JavaScript", "Node.js", "MongoDB","express.js"], // Tech stack
     link: "https://github.com/AlkaGupta680/voting_app"
   },
   {
     id: 3, 
     title: "Resturant App",
     description: "This is a full-stack restaurant web application that allows users to explore the menu, place orders, and reserve tables online. It features user authentication, dynamic order management, and an admin dashboard for handling menu items and customer requests. The backend manages data flow, order tracking, and user sessions, while the frontend offers a visually engaging and user-friendly interface for a smooth dining experience online.",
-    period: "2023.10 - 2023.12",
     image: "/gallery/hotel_logo.png",
-    skills: ["React","JavaScript" ,"Node.js", "MongoDB"],
+    skills: ["React","JavaScript" ,"Node.js", "MongoDB","express.js"],
     link: "https://github.com/AlkaGupta680/node_hotels"
+  },
+  {
+    id: 4, 
+    title: "Drama Blossom",
+    description: "Drama Blossom is a full-stack MERN web application for K-drama and K-movie enthusiasts. Users can create personal accounts to explore a curated library of Korean dramas and movies, bookmark favorites, and engage in community discussions through comments and reviews. The platform features secure user authentication, personalized watchlists, and an admin dashboard for managing content and user activity. The backend efficiently handles data management, authentication, and user sessions, while the frontend offers a modern, responsive, and user-friendly interface for a seamless entertainment experience.",
+    image: "/gallery/dramaBlossom.png",
+    skills: ["React","JavaScript" ,"Node.js", "MongoDB","express.js"],
+    link: "https://github.com/AlkaGupta680/MERN-Drama-Blossom"
   }
+
 ];
 
 export default function Projects() {
@@ -113,9 +119,7 @@ export default function Projects() {
                     {project.title}
                   </h2>
                   
-                  <p className="text-base text-gray-600 dark:text-gray-400 mb-2">
-                    {project.period}
-                  </p>
+                 
                   
                   <p className="text-base text-gray-600 dark:text-gray-400 mb-4 line-clamp-2">
                     {project.description}

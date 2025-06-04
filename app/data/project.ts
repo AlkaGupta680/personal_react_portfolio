@@ -16,11 +16,7 @@ export type ProjectDetail = {
     category: string      // Tech category name
     items: string[]       // List of technologies
   }[]
-  achievements: {         // Quantifiable achievements
-    metric: string        // Achievement metric name
-    value: string         // Achievement value
-    change: number        // Numerical change/improvement
-  }[]
+  
 }
 
 // Project data mapping object
@@ -48,16 +44,10 @@ export const PROJECT_DATA: Record<number, ProjectDetail> = {
     techStack: [
       {
         category: "Frontend",
-        items: ["React", "JavaScript","CSS","PHP"]
+        items: ["React", "JavaScript", "tailwindcss"]
       }
     ],
-    achievements: [
-      {
-        metric: "Performance Improvement",
-        value: "50%",
-        change: 50
-      }
-    ]
+   
   },
   2: {
     id: 2,
@@ -91,13 +81,7 @@ export const PROJECT_DATA: Record<number, ProjectDetail> = {
         items: ["React", "JavaScript","TailwindCSS","Nodejs","MongoDB","express","mongoose","nextjs"]
       }
     ],
-    achievements: [
-      {
-        metric: "Performance Improvement",
-        value: "50%",
-        change: 50
-      }
-    ]
+    
   },
   3: {
     id: 3,
@@ -116,16 +100,32 @@ export const PROJECT_DATA: Record<number, ProjectDetail> = {
     techStack: [
       {
         category: "Full Stack",
-        items: ["React","Vite" ,"JavaScript","TailwindCSS","Nodejs","MongoDB","express","nextjs"]
-      }
-    ],
-    achievements: [
-      {
-        metric: "User Satisfaction",
-        value: "95%",
-        change: 95
+        items: ["React","Vite" ,"JavaScript","TailwindCSS","Nodejs","MongoDB","express",]
       }
     ]
+   
+  },
+  4: {
+    id: 4,
+    title: "Drama Blossom",
+    company: "Self learning",
+    overview: "Drama Blossom is a full-stack MERN web application for K-drama and K-movie enthusiasts. Users can create personal accounts to explore a curated library of Korean dramas and movies, bookmark favorites, and engage in community discussions through comments and reviews. The platform features secure user authentication, personalized watchlists, and an admin dashboard for managing content and user activity. The backend efficiently handles data management, authentication, and user sessions, while the frontend offers a modern, responsive, and user-friendly interface for a seamless entertainment experience.", 
+    mainImage: "/gallery/dramaBlossom.png",
+    link: "https://github.com/AlkaGupta680/MERN-Drama-Blossom",
+    features: [
+      {
+        title: "Make reservation",
+        description: "user can make reservation",
+        image: "/example2/feature.png"
+      }
+    ],
+    techStack: [
+      {
+        category: "Full Stack",
+        items: ["React","Vite" ,"JavaScript","TailwindCSS","Nodejs","MongoDB","express",]
+      }
+    ],
+   
   }
 }
 
